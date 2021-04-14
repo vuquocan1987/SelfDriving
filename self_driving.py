@@ -8,9 +8,10 @@ import os
 import csv
 from constant import PATHS
 import socket
-URL = 'http://10.42.0.163:8080/video'
+# URL = 'http://10.42.0.163:8080/video'
+URL = 'http://192.168.224.21:8080/video'
 
-key_dict = {Key.up: 0, Key.down: 1, Key.left:2, Key.right:3}
+key_dict = {Key.up: 0, Key.down: 3, Key.left:2, Key.right:1}
 code_to_message = {v: str(k) for k,v in key_dict.items()}
 print(code_to_message)
 rev_key_dict = {v:k for k,v in key_dict.items()}

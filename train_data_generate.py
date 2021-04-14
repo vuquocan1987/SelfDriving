@@ -6,10 +6,10 @@ import numpy as np
 import os
 import csv 
 
-URL = 'http://10.42.0.163:8080/video'
+URL = 'http://192.168.224.21:8080/video'
 IMAGE_PATH = 'data/images'
 CSV_PATH = 'data/train.csv'
-key_dict = {Key.up: 0, Key.down: 1, Key.left:2, Key.right:3}
+key_dict = {Key.up: 0, Key.down: 3, Key.left:2, Key.right:1}
 vid = cv2.VideoCapture(URL)
 vid.set(cv2.CAP_PROP_FPS,30)
 vid.set(cv2.CAP_PROP_BUFFERSIZE,1)
